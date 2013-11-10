@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="anim" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="anim" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add directory="GL" />
+				</Compiler>
+				<Linker>
+					<Add library="odbc32.lib" />
+					<Add library="odbccp32.lib" />
+					<Add library="opengl32.lib" />
+					<Add library="glu32.lib" />
+					<Add directory="GL" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="anim" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+				</Compiler>
+				<Linker>
+					<Add library="odbc32.lib" />
+					<Add library="odbccp32.lib" />
+					<Add library="opengl32.lib" />
+					<Add library="glu32.lib" />
+					<Add directory="GL" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="Ball.cxx" />
+		<Unit filename="Ball.h" />
+		<Unit filename="BallAux.cxx" />
+		<Unit filename="BallAux.h" />
+		<Unit filename="BallMath.cxx" />
+		<Unit filename="BallMath.h" />
+		<Unit filename="FrameSaver.cpp" />
+		<Unit filename="FrameSaver.h" />
+		<Unit filename="Timer.cpp" />
+		<Unit filename="Timer.h" />
+		<Unit filename="anim.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
